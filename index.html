@@ -1,0 +1,368 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Vijayalakshmi N | Portfolio</title>
+
+    <style>
+        /* Basic styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7fc;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Navigation bar */
+        header {
+            background-color: #182848;
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        header h2 {
+            color: white;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 10px;
+            font-size: 15px;
+        }
+
+        nav a:hover {
+            color: #00d4ff;
+        }
+
+        /* Home section */
+        .home {
+            min-height: 85vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+            padding: 50px 8%;
+            flex-wrap: wrap;
+            background: linear-gradient(135deg, #182848, #4b6cb7);
+            color: white;
+        }
+
+        .home-text {
+            max-width: 550px;
+        }
+
+        .home-text h1 {
+            font-size: 42px;
+            margin-bottom: 10px;
+        }
+
+        .home-text h2 {
+            color: #00d4ff;
+            margin-bottom: 15px;
+        }
+
+        .home-text p {
+            font-size: 18px;
+            margin-bottom: 25px;
+        }
+
+        /* Profile image */
+        .profile-img {
+            width: 230px;
+            height: 230px;
+            border-radius: 50%;
+            border: 6px solid white;
+            object-fit: cover;
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            background-color: #00c9a7;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #008f7a;
+            transform: scale(1.05);
+        }
+
+        /* Common section styling */
+        section {
+            padding: 65px 8%;
+            text-align: center;
+        }
+
+        section h2 {
+            font-size: 30px;
+            color: #182848;
+            margin-bottom: 25px;
+        }
+
+        /* About section */
+        .about p {
+            max-width: 700px;
+            margin: auto;
+            font-size: 17px;
+        }
+
+        /* Education section */
+        .education-box {
+            background-color: white;
+            max-width: 500px;
+            margin: auto;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px #00000015;
+        }
+
+        .education-box h3 {
+            color: #4b6cb7;
+        }
+
+        /* Skills section */
+        .skills-container {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .skill {
+            background-color: #182848;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 25px;
+            transition: 0.3s;
+        }
+
+        .skill:hover {
+            background-color: #00a99d;
+            transform: translateY(-5px);
+        }
+
+        /* Projects section */
+        .project-box {
+            background-color: white;
+            max-width: 500px;
+            margin: auto;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px #00000015;
+        }
+
+        .project-box h3 {
+            color: #4b6cb7;
+            margin-bottom: 10px;
+        }
+
+        /* Contact section */
+        .contact {
+            background-color: #e9effa;
+        }
+
+        .contact p {
+            margin: 10px;
+            font-size: 17px;
+        }
+
+        .social-links {
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            color: #182848;
+            text-decoration: none;
+            margin: 10px;
+            font-weight: bold;
+        }
+
+        .social-links a:hover {
+            color: #00a99d;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #182848;
+            color: white;
+            text-align: center;
+            padding: 18px;
+        }
+
+        /* Mobile responsive design */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav {
+                text-align: center;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px;
+                font-size: 13px;
+            }
+
+            .home {
+                text-align: center;
+                flex-direction: column-reverse;
+            }
+
+            .home-text h1 {
+                font-size: 32px;
+            }
+
+            .profile-img {
+                width: 180px;
+                height: 180px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation bar -->
+    <header>
+        <h2>My Portfolio</h2>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Home section -->
+    <section class="home" id="home">
+
+        <div class="home-text">
+            <h1>Hello, I'm Vijayalakshmi N</h1>
+            <h2>BCA Student</h2>
+
+            <p>
+                Welcome to my personal portfolio website.
+                I am studying in 1st year BCA and interested
+                in learning computer technology and programming.
+            </p>
+
+            <a href="#contact" class="btn">Contact Me</a>
+        </div>
+
+        <!-- Profile image placeholder -->
+        <img
+            src="https://placehold.co/300x300/ffffff/182848?text=Your+Photo"
+            alt="Vijayalakshmi Profile"
+            class="profile-img">
+    </section>
+
+    <!-- About Me section -->
+    <section class="about" id="about">
+        <h2>About Me</h2>
+
+        <p>
+            My name is Vijayalakshmi N. I am studying in
+            1st BCA at college. I am interested in computer
+            science, programming and learning new technologies.
+            My hobby is singing. My goal is to improve my
+            technical knowledge and become a skilled professional.
+        </p>
+    </section>
+
+    <!-- Education section -->
+    <section id="education">
+        <h2>My Education</h2>
+
+        <div class="education-box">
+            <h3>Bachelor of Computer Applications (BCA)</h3>
+            <p>1st Year</p>
+            <p>Undergraduate Student</p>
+        </div>
+    </section>
+
+    <!-- Skills section -->
+    <section id="skills">
+        <h2>My Skills</h2>
+
+        <div class="skills-container">
+            <div class="skill">C Programming</div>
+            <div class="skill">Python</div>
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">Java</div>
+        </div>
+    </section>
+
+    <!-- Projects section -->
+    <section id="projects">
+        <h2>My Projects</h2>
+
+        <div class="project-box">
+            <h3>Personal Portfolio Website</h3>
+            <p>
+                This is my first personal portfolio website
+                created using HTML and CSS. It displays my
+                introduction, education, skills and contact details.
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact section -->
+    <section class="contact" id="contact">
+        <h2>Contact Me</h2>
+
+        <p><b>Name:</b> Vijayalakshmi N</p>
+        <p><b>Phone:</b> 9113991177</p>
+        <p><b>Location:</b> Tumkur</p>
+        <p><b>Hobby:</b> Singing</p>
+
+        <a href="tel:9113991177" class="btn">
+            Call Me
+        </a>
+
+        <div class="social-links">
+            <p>Connect With Me</p>
+
+            <a href="https://www.instagram.com/"
+               target="_blank">Instagram</a>
+
+            <a href="https://www.linkedin.com/"
+               target="_blank">LinkedIn</a>
+
+            <a href="https://www.facebook.com/"
+               target="_blank">Facebook</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Vijayalakshmi N | My Portfolio Website</p>
+    </footer>
+
+</body>
+</html>
